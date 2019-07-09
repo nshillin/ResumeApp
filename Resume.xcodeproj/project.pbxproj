@@ -19,8 +19,6 @@
 		45894F6B22D4205B00A0DAB8 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45894F6922D4205B00A0DAB8 /* ContactTableViewCell.swift */; };
 		45894F6D22D423D800A0DAB8 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45894F6A22D4205B00A0DAB8 /* ContactTableViewCell.xib */; };
 		45894F6F22D43E9D00A0DAB8 /* ContactMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45894F6E22D43E9D00A0DAB8 /* ContactMethod.swift */; };
-		45894F7222D442CF00A0DAB8 /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45894F7022D442CF00A0DAB8 /* SkillsTableViewCell.swift */; };
-		45894F7322D442CF00A0DAB8 /* SkillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45894F7122D442CF00A0DAB8 /* SkillsTableViewCell.xib */; };
 		45894F7622D443DD00A0DAB8 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45894F7422D443DD00A0DAB8 /* ExperienceTableViewCell.swift */; };
 		45894F7722D443DD00A0DAB8 /* ExperienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45894F7522D443DD00A0DAB8 /* ExperienceTableViewCell.xib */; };
 		45894F7B22D44BC300A0DAB8 /* ResumeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45894F7A22D44BC300A0DAB8 /* ResumeTabBarViewController.swift */; };
@@ -41,8 +39,6 @@
 		45894F6922D4205B00A0DAB8 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		45894F6A22D4205B00A0DAB8 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
 		45894F6E22D43E9D00A0DAB8 /* ContactMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMethod.swift; sourceTree = "<group>"; };
-		45894F7022D442CF00A0DAB8 /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
-		45894F7122D442CF00A0DAB8 /* SkillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkillsTableViewCell.xib; sourceTree = "<group>"; };
 		45894F7422D443DD00A0DAB8 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
 		45894F7522D443DD00A0DAB8 /* ExperienceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceTableViewCell.xib; sourceTree = "<group>"; };
 		45894F7A22D44BC300A0DAB8 /* ResumeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTabBarViewController.swift; sourceTree = "<group>"; };
@@ -124,8 +120,6 @@
 			children = (
 				45894F6922D4205B00A0DAB8 /* ContactTableViewCell.swift */,
 				45894F6A22D4205B00A0DAB8 /* ContactTableViewCell.xib */,
-				45894F7022D442CF00A0DAB8 /* SkillsTableViewCell.swift */,
-				45894F7122D442CF00A0DAB8 /* SkillsTableViewCell.xib */,
 				45894F7422D443DD00A0DAB8 /* ExperienceTableViewCell.swift */,
 				45894F7522D443DD00A0DAB8 /* ExperienceTableViewCell.xib */,
 			);
@@ -192,7 +186,6 @@
 			files = (
 				45894F6D22D423D800A0DAB8 /* ContactTableViewCell.xib in Resources */,
 				4588F30822D3D26B00E7C047 /* LaunchScreen.storyboard in Resources */,
-				45894F7322D442CF00A0DAB8 /* SkillsTableViewCell.xib in Resources */,
 				4588F30522D3D26B00E7C047 /* Assets.xcassets in Resources */,
 				4588F30022D3D26A00E7C047 /* Main.storyboard in Resources */,
 				45894F7722D443DD00A0DAB8 /* ExperienceTableViewCell.xib in Resources */,
@@ -211,7 +204,6 @@
 				45894F6F22D43E9D00A0DAB8 /* ContactMethod.swift in Sources */,
 				45894F5D22D3DC0200A0DAB8 /* ExperienceViewController.swift in Sources */,
 				45894F7B22D44BC300A0DAB8 /* ResumeTabBarViewController.swift in Sources */,
-				45894F7222D442CF00A0DAB8 /* SkillsTableViewCell.swift in Sources */,
 				45894F6522D4040C00A0DAB8 /* Experience.swift in Sources */,
 				4588F2FB22D3D26A00E7C047 /* AppDelegate.swift in Sources */,
 				45894F5A22D3DBD000A0DAB8 /* GeneralViewController.swift in Sources */,
