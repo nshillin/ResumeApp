@@ -10,7 +10,7 @@ import UIKit
 
 struct NetworkHandler {
     
-    private let profileURL = URL(string: "https://gist.githubusercontent.com/nshillin/3ee62caea9addc5de056eff2a4a48fce/raw")!
+    private let profileURL = URL(string: "https://gist.githubusercontent.com/nshillin/3ee62caea9addc5de056eff2a4a48fce/raw/")!
     
     func getProfile(success:@escaping (Profile)->(), failure:@escaping (String)->()) {
         let session = URLSession.shared
