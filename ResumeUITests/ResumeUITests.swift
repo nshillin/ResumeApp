@@ -20,9 +20,6 @@ class ResumeUITests: XCTestCase {
         
         app.launch()
     }
-
-    override func tearDown() {
-    }
     
     
     func testActivityIndicatorHide() {

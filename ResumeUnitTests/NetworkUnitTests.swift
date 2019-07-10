@@ -19,12 +19,7 @@ class NetworkUnitTests: XCTestCase {
     let badURL = URL(string: "http://www.example.com:8800")
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         networkHandler = NetworkHandler()
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
     func testInvalidURL() {
