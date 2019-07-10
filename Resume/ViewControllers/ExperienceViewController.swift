@@ -34,9 +34,9 @@ class ExperienceViewController: UIViewController {
         }
     }
     
-    let experienceCell = "ExperienceTableViewCell"
+    let groups:[ExperienceGroups] = [.education,.experience,.projects]
     
-    var groups:[ExperienceGroups] = [.education,.experience,.projects]
+    let experienceCell = "ExperienceTableViewCell"
     
     var profile:Profile? {
         didSet {
@@ -53,6 +53,8 @@ class ExperienceViewController: UIViewController {
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        
+        tableView.accessibilityIdentifier = "ExperienceTable"
     }
     
     func open(url:URL?) {
@@ -102,4 +104,5 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return groups[section].title
     }
+    
 }

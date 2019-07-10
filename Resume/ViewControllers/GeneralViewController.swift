@@ -24,6 +24,7 @@ class GeneralViewController: UIViewController  {
     @IBOutlet weak var contactTableViewTop: NSLayoutConstraint!
     let contactCell = "ContactTableViewCell"
     
+    // Update navbar content and refresh contact table on profile update
     var profile:Profile? {
         didSet {
             if let profile = profile {
@@ -38,6 +39,8 @@ class GeneralViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navBarView.accessibilityIdentifier = "GeneralNavBar"
+        
         nameLabel.text = ""
         jobTitleLabel.text = ""
 
@@ -46,11 +49,12 @@ class GeneralViewController: UIViewController  {
         contactTableView.register(UINib(nibName: contactCell, bundle: nil), forCellReuseIdentifier: contactCell)
         contactTableViewTop.constant = navBarView.frame.maxY
         
-        resizeImageRadius()
-        
         contactTableView.rowHeight = UITableView.automaticDimension
         contactTableView.estimatedRowHeight = 100
+        
+        resizeImageRadius()
     }
+    
     
     func resizeImageRadius() {
         profileImageView.layer.cornerRadius = profileImageHeight.constant/2
@@ -75,6 +79,7 @@ class GeneralViewController: UIViewController  {
         }
     }
     
+    // Download profile image in background/update when loaded
     func downloadImage(from url: URL?) {
         if let url = url {
             DispatchQueue.global().async {

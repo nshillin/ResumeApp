@@ -10,25 +10,31 @@ import UIKit
 
 struct NetworkHandler {
     
-    private let profileURL = URL(string: "https://gist.githubusercontent.com/nshillin/3ee62caea9addc5de056eff2a4a48fce/raw/")!
+    func getDefaultUserProfile(success:@escaping (Profile)->(), failure:@escaping (NetworkError)->()) {
+        let delegte = UIApplication.shared.delegate as? AppDelegate
+        getProfile(profileURL: delegte?.applicationState.profileURL, success: success, failure: failure)
+    }
     
-    func getProfile(success:@escaping (Profile)->(), failure:@escaping (String)->()) {
+    func getProfile(profileURL:URL?, success:@escaping (Profile)->(), failure:@escaping (NetworkError)->()) {
         let session = URLSession.shared
         
-        let task = session.dataTask(with: profileURL) { (data, response, error) in
-            if let error = error {
-                failure(error.localizedDescription)
-            } else if let data = data {
-                do {
-//                    print(try JSONSerialization.jsonObject(with: data, options: []))
-                    let profile = try JSONDecoder().decode(Profile.self, from: data)
-                    success(profile)
-                } catch {
-                    failure("Failed to decode JSON")
+        if let profileURL = profileURL {
+            let task = session.dataTask(with: profileURL) { (data, response, error) in
+                if let _ = error {
+                    failure(.defaultError)
+                } else if let data = data {
+                    do {
+                        let profile = try JSONDecoder().decode(Profile.self, from: data)
+                        success(profile)
+                    } catch {
+                        failure(.invalidJSON)
+                    }
                 }
             }
+            
+            task.resume()
+        } else {
+            failure(.invalidURL)
         }
-        
-        task.resume()
     }
 }

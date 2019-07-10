@@ -57,6 +57,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJC-ta-tzL">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="AppStore"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="CJC-ta-tzL" secondAttribute="height" multiplier="1:1" id="OY3-ai-PAs"/>
                                                         </constraints>
@@ -68,6 +69,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-wD-eAF">
                                                         <rect key="frame" x="76" y="0.0" width="50" height="50"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="LinkedIn"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GhS-wD-eAF" secondAttribute="height" multiplier="1:1" id="nHe-BM-cb6"/>
                                                         </constraints>
@@ -79,6 +81,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oey-q9-x8g">
                                                         <rect key="frame" x="152" y="0.0" width="50" height="50"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="GitHub"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Oey-q9-x8g" secondAttribute="height" multiplier="1:1" id="xf8-jx-QLd"/>
                                                         </constraints>

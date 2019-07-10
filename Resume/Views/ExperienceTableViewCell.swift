@@ -18,6 +18,7 @@ class ExperienceTableViewCell: UITableViewCell {
     var title:String? {
         didSet {
             titleLabel.text = title
+            accessibilityIdentifier = title
         }
     }
     
